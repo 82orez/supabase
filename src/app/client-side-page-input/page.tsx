@@ -84,7 +84,7 @@ export default function ClientSidePage() {
             <div key={item.id} className={"flex max-w-sm justify-between gap-5"}>
               name: {item.name} age: {item.age}
               <button
-                className={"border-2 p-1"}
+                className={"border-2 px-3 py-1"}
                 onClick={() => {
                   delMutation.mutate(item.id);
                 }}>
