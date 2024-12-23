@@ -5,6 +5,8 @@ export default function Home() {
     <div>
       <div>Supabase's Home Page</div>
       <div>Hello World</div>
+      <div>Hello World</div>
+      <div>Hello World</div>
     </div>
   );
 }
