@@ -6,9 +6,13 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "generate-types": "npx supabase gen types typescript --project-id cnalbyjmktvydmkfkbra --schema public > src/types_db.ts"
   },
   "dependencies": {
+    "@prisma/client": "^6.1.0",
+    "@supabase/ssr": "^0.5.2",
+    "@supabase/supabase-js": "^2.47.10",
     "next": "15.1.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
@@ -20,6 +24,8 @@
     "postcss": "^8",
     "prettier": "^3.4.2",
     "prettier-plugin-tailwindcss": "^0.6.9",
+    "prisma": "^6.1.0",
+    "supabase": "^2.1.1",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
   }
